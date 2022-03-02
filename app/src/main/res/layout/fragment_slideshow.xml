@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+    <TableRow>
+        <TextView android:text="ID:"/>
+        <EditText android:ems="12" android:id="@+id/id" android:inputType="number"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="TÍTULO"/>
+        <EditText android:id="@+id/titulo"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="AUTOR(ES)"/>
+        <EditText android:id="@+id/autor"/>
+    </TableRow>
+    <TableRow android:layout_marginTop="40dp" android:paddingHorizontal="40dp">
+        <Button android:text="BUSCAR" android:id="@+id/buscar" android:layout_weight="1"/>
+    </TableRow>
+    <TableRow android:paddingHorizontal="40dp">
+        <Button android:text="ACTUALIZAR" android:id="@+id/actualizar" android:layout_weight="1" android:enabled="false"/>
+    </TableRow>
+    <TableRow android:paddingHorizontal="40dp">
+        <Button android:text="BORRAR" android:id="@+id/borrar" android:layout_weight="1" android:enabled="false"/>
+    </TableRow>
+
+</TableLayout>
